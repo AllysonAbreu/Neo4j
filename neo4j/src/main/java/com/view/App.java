@@ -46,11 +46,65 @@ public class App {
 
         UsuarioDao usr = new UsuarioDao();
 
+        //cadastro da galera
 //        for (Pessoa usuario : users) {
 //            usr.cadastro(usuario);
 //        }
+//
+//        //primeira rodada de seguimores.
+//        usr.seguir(user, user15);
+//        usr.seguir(user2, user14);
+//        usr.seguir(user3, user13);
+//        usr.seguir(user4, user12);
+//        usr.seguir(user5, user11);
+//        usr.seguir(user6, user10);
+//        usr.seguir(user7, user9);
+//        usr.seguir(user8, user2);
+//        usr.seguir(user15, user);
+//        usr.seguir(user14, user2);
+//        usr.seguir(user13, user3);
+//        usr.seguir(user12, user4);
+//        usr.seguir(user11, user5);
+//        usr.seguir(user10, user6);
+//        usr.seguir(user9, user7);
+//        usr.seguir(user2, user8);
+//
+//        //segunda rodada de seguimores.
+//        usr.seguir(user, user2);
+//        usr.seguir(user3, user4);
+//        usr.seguir(user5, user6);
+//        usr.seguir(user7, user8);
+//        usr.seguir(user9, user10);
+//        usr.seguir(user11, user12);
+//        usr.seguir(user13, user14);
+//        usr.seguir(user4, user3);
+//        usr.seguir(user6, user5);
+//        usr.seguir(user10, user9);
+//        usr.seguir(user14, user13);
+//
+//        //terceira rodada de seguimores.
+//        usr.seguir(user3, user14);
+//        usr.seguir(user14, user3);
+//        usr.seguir(user6, user15);
+//        usr.seguir(user15, user6);
+//        usr.seguir(user2, user);
+//        usr.seguir(user10, user8);
+//        usr.seguir(user8, user10);
+//        usr.seguir(user11, user9);
+//        usr.seguir(user7, user);
+//        usr.seguir(user, user7);
+//        usr.seguir(user3, user6);
+//        usr.seguir(user6, user3);
+//        usr.seguir(user5, user8);
+//        usr.seguir(user10, user15);
 
-        usr.verUsers();
+
+//        usr.verUsers();
+
+
+//        usr.verSeguidores(user15)
+        usr.recomendarSeguidores(user13, user3);
+
 
 
     }

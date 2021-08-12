@@ -55,7 +55,7 @@ public class UsuarioDao {
                 AuthTokens.basic("neo4j","123"));
 
         try(Session session = driver.session()){
-            Result result = session.run("MATCH (p:Pessoa{email:$email}) - [:AMIGO] ->(m)<- [:AMIGO]-(Pessoa)" +
+            Result result = session.run("MATCH (p:Pessoa{email:$email}) - [:AMIGO] ->(Pessoa)" +
                     "RETURN Pessoa.nome", parameters("email", user.getEmail()));
             result.list().forEach(record -> System.out.println(record.values()));
         } finally {
@@ -64,5 +64,18 @@ public class UsuarioDao {
     }
 
 
+    public void recomendarSeguidores(Pessoa user, Pessoa user2){
+        Driver driver = GraphDatabase.driver("bolt://localhost:7687",
+                AuthTokens.basic("neo4j","123"));
+
+        try(Session session = driver.session()){
+            Result result = session.run("MATCH (p:Pessoa{email:$email}) - [:AMIGO] ->(p2:Pessoa{email2:$email2})" +
+                    "-[:AMIGO]->(Pessoa) WHERE NOT (p)-[:AMIGO]-> (Pessoa) AND p <> Pessoa " +
+                    "RETURN Pessoa.nome", parameters("email", user.getEmail(), "email2", user2.getEmail()));
+            result.list().forEach(record -> System.out.println(record.values()));
+        } finally {
+            driver.close();
+        }
+    }
 
 }
