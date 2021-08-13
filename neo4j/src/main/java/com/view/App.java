@@ -46,11 +46,11 @@ public class App {
 
         UsuarioDao usr = new UsuarioDao();
 
-        //cadastro da galera
+//        //cadastro da galera
 //        for (Pessoa usuario : users) {
 //            usr.cadastro(usuario);
 //        }
-//
+////
 //        //primeira rodada de seguimores.
 //        usr.seguir(user, user15);
 //        usr.seguir(user2, user14);
@@ -68,7 +68,7 @@ public class App {
 //        usr.seguir(user10, user6);
 //        usr.seguir(user9, user7);
 //        usr.seguir(user2, user8);
-//
+////
 //        //segunda rodada de seguimores.
 //        usr.seguir(user, user2);
 //        usr.seguir(user3, user4);
@@ -81,7 +81,7 @@ public class App {
 //        usr.seguir(user6, user5);
 //        usr.seguir(user10, user9);
 //        usr.seguir(user14, user13);
-//
+////
 //        //terceira rodada de seguimores.
 //        usr.seguir(user3, user14);
 //        usr.seguir(user14, user3);
@@ -102,8 +102,8 @@ public class App {
 //        usr.verUsers();
 
 
-//        usr.verSeguidores(user15)
-        usr.recomendarSeguidores(user13, user3);
+//        usr.verSeguidores(user15);
+//        usr.recomendarSeguidores(user, user15);
 
 
 
