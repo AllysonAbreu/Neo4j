@@ -7,11 +7,16 @@ import static org.neo4j.driver.Values.parameters;
 
 public class UsuarioDao {
 
+    private String url = "bolt://localhost:7687";
+    private String username = "neo4j";
+    private String password = "123";
+
+
     public UsuarioDao(){}
 
     public Driver driverAccess(){
-        Driver driver = GraphDatabase.driver("bolt://localhost:7687",
-                AuthTokens.basic("neo4j","123"));
+        Driver driver = GraphDatabase.driver(url,
+                AuthTokens.basic(username,password));
         return driver;
     }
     

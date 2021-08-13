@@ -46,12 +46,12 @@ public class App {
 
         UsuarioDao usr = new UsuarioDao();
 
-//        //cadastro da galera
+        //cadastro da galera
 //        for (Pessoa usuario : users) {
 //            usr.cadastro(usuario);
 //        }
-////
-//        //primeira rodada de seguimores.
+
+//        //primeira rodada de seguidores.
 //        usr.seguir(user, user15);
 //        usr.seguir(user2, user14);
 //        usr.seguir(user3, user13);
@@ -68,8 +68,8 @@ public class App {
 //        usr.seguir(user10, user6);
 //        usr.seguir(user9, user7);
 //        usr.seguir(user2, user8);
-////
-//        //segunda rodada de seguimores.
+//
+//        //segunda rodada de seguidores.
 //        usr.seguir(user, user2);
 //        usr.seguir(user3, user4);
 //        usr.seguir(user5, user6);
@@ -81,8 +81,8 @@ public class App {
 //        usr.seguir(user6, user5);
 //        usr.seguir(user10, user9);
 //        usr.seguir(user14, user13);
-////
-//        //terceira rodada de seguimores.
+//
+//        //terceira rodada de seguidores.
 //        usr.seguir(user3, user14);
 //        usr.seguir(user14, user3);
 //        usr.seguir(user6, user15);
@@ -98,12 +98,19 @@ public class App {
 //        usr.seguir(user5, user8);
 //        usr.seguir(user10, user15);
 
-
+//        Chamando lista dos usuários cadastrados.
 //        usr.verUsers();
 
-
+//        Ver lista de seguidores de determinado usuário
 //        usr.verSeguidores(user15);
+//        usr.verSeguidores(user10);
+//        usr.verSeguidores(user8);
+
+//        Recomendação de seguidores a partir de um padrão.
 //        usr.recomendarSeguidores(user, user15);
+//        usr.recomendarSeguidores(user15, user3);
+//        usr.recomendarSeguidores(user3, user10);
+//        usr.recomendarSeguidores(user3, user14);
 
 
 
